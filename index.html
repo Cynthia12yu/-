@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>思辨实验室 · 把哲学变成你能用的思考工具</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">思辨实验室 <span class="brand-en">· Philosophy Lab</span></div>
+    <nav class="nav">
+      <button class="nav-btn active" data-view="home">首页</button>
+      <button class="nav-btn" data-view="socrates">苏格拉底对话</button>
+      <button class="nav-btn" data-view="veil">无知之幕</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 首页 -->
+    <section id="view-home" class="view active">
+      <div class="hero">
+        <h1>把哲学变成可以上手的东西</h1>
+        <p class="hero-sub">
+          你正纠结一个决定，或想搞清楚"什么才算公平"？这里把两套经典哲学思考，
+          做成了你随手就能玩、玩完还能用上的工具——不用先读任何哲学书。
+        </p>
+        <div class="cards">
+          <article class="card" data-go="socrates" data-mode="decision">
+            <div class="card-tag">对话 · 你的决策陪练</div>
+            <h2>决策陪练 · 让苏格拉底当你的对手</h2>
+            <p>拿不准一个决定？把它带进来。苏格拉底式的"对手"会唱反调、点出你没留意的盲区，再借"五年后的你"回看此刻——不过走到哪一步、最终选哪条路，都由你定。</p>
+            <span class="card-link">进入 →</span>
+          </article>
+          <article class="card" data-go="veil">
+            <div class="card-tag">模拟 · 你来定规则</div>
+            <h2>正义沙盘 · 你来定一个社会的规则</h2>
+            <p>你来做规则制定者，定下 6 条社会规则，再被随机分配成 1000 人里的一个，亲历这个社会 10 代人的命运——然后看看，你定的规矩会不会也让自己活得体面。</p>
+            <span class="card-link">进入 →</span>
+          </article>
+        </div>
+        <p class="hero-note">
+          我们无意把这里变成一堂哲学课，只想交给你两件能拿来就用的思考工具。不用注册，一个决定可以反复推演，一套社会规则也能改了重来。
+        </p>
+      </div>
+
+      <div class="bridge">
+        <h3>这两件，为什么放在一块儿？</h3>
+        <p class="bridge-lead">
+          它们表面上毫不相干：一边帮你把<strong>自己的想法</strong>想清楚，一边帮你想明白<strong>社会该怎么分</strong>。
+          可背后的思路是同一道——<strong>先让你暂时「看不见」某些东西，反而把真相看得更清楚</strong>：
+        </p>
+        <div class="bridge-cols">
+          <div class="bridge-col">
+            <div class="bc-tag">向内 · 看清自己</div>
+            <h4>苏格拉底对话</h4>
+            <p>它很少直接给答案，总把你那些"想当然"的前提一条条拎出来盘问。你以为自己想清楚了，常常只是还没看清，漏洞到底藏在哪一环。</p>
+          </div>
+          <div class="bridge-col">
+            <div class="bc-tag">向外 · 看清社会</div>
+            <h4>无知之幕</h4>
+            <p>它在你定规则时，先让你"看不见自己是谁"——看不见将来是穷是富、聪明与否、身体好坏。你以为设计得足够公道，多半因为你就站在自己这一边。</p>
+          </div>
+        </div>
+        <p class="bridge-foot">
+          一个向内、一个向外，它们练的其实是同一件事：哲学的价值不在记住什么结论，而在学会把一件事想清楚。
+          「无知之幕」这个设想出自哲学家罗尔斯——你刚才在这里，亲手走了一遍他提出的那种推演。
+        </p>
+      </div>
+    </section>
+
+    <!-- 苏格拉底对话 -->
+    <section id="view-socrates" class="view">
+      <div class="module-head">
+        <h2>苏格拉底对话 · 诘问与决策陪练</h2>
+        <p>
+          苏格拉底是古希腊的哲学家。他真正被人记住的，是那种"不急着给答案"的对话方式：他一生少有著述，却用不断追问，逼着对话者自己发现想法里的裂缝。
+          他总是一点点追问，逼着对方自己发现想法里的裂缝。这种方法后来被称为"诘问"（elenchus），
+          也被他比作"助产"——把对方心里本来就有的想法，一点点接生出来。
+          本模块把这套方法做成了两件事：          一是「哲学诘问」，你抛出一个主张，他顺着你的话不断反问，
+          直到你自己的逻辑自己站不住；二是「决策陪练」，你带来一个拿不准的决定，
+          他当你的对手、分析师和长期顾问，专挑你没注意到的地方问——但到底怎么选，永远是你自己的事。
+        </p>
+      </div>
+
+      <p class="cross-link">已经在逼问自己的想法了？顺手也去想想「社会该怎么分」： <a href="#" data-go="veil">去玩无知之幕 →</a></p>
+
+      <div class="mode-tabs">
+        <button class="mode-tab active" data-mode="decision">决策陪练</button>
+        <button class="mode-tab" data-mode="elenchus">哲学诘问</button>
+      </div>
+
+      <div id="elenchusPanel" class="hidden">
+      <div class="settings-bar">
+        <button id="toggleSettings" class="ghost">⚙ API 设置（启用真 AI）</button>
+        <span id="aiStatus" class="ai-status">当前：离线预设模式</span>
+      </div>
+
+      <div id="settingsPanel" class="settings-panel hidden">
+        <div class="set-row">
+          <label>服务商预设</label>
+          <select id="providerSelect">
+            <option value="openai">OpenAI</option>
+            <option value="deepseek">DeepSeek</option>
+            <option value="siliconflow">硅基流动</option>
+            <option value="ollama">本地 Ollama</option>
+            <option value="custom">自定义</option>
+          </select>
+        </div>
+        <div class="set-row">
+          <label>API Endpoint</label>
+          <input id="endpointInput" type="text" placeholder="https://.../v1/chat/completions" />
+        </div>
+        <div class="set-row">
+          <label>API Key</label>
+          <input id="keyInput" type="password" placeholder="sk-..." />
+        </div>
+        <div class="set-row">
+          <label>Model</label>
+          <input id="modelInput" type="text" placeholder="模型名" />
+        </div>
+        <div class="settings-actions">
+          <button id="saveSettings" class="primary">保存并启用</button>
+          <button id="clearSettings" class="ghost">清除（回离线）</button>
+        </div>
+        <p class="hint">
+          密钥仅保存在你浏览器本地（localStorage），不会上传到任何服务器；清除即失效。
+          若站点已部署代理（服务端持有 Key），则无需填写，所有人打开即得真 AI。
+        </p>
+      </div>
+
+      <div class="chat" id="chatBox"></div>
+
+      <div class="composer">
+        <div class="examples">
+          试试这些「主张」（苏格拉底会就其中一词追问你）：
+          <button class="chip" data-ex="为了安稳，放弃热爱的工作是明智的">为了安稳，放弃热爱的工作是明智的</button>
+          <button class="chip" data-ex="稳定的工作比热爱的工作更重要">稳定的工作比热爱的工作更重要</button>
+          <button class="chip" data-ex="年轻人应该先攒钱再谈理想">年轻人应该先攒钱再谈理想</button>
+          <button class="chip" data-ex="在该结婚的年纪就结婚，没错">在该结婚的年纪就结婚，没错</button>
+        </div>
+        <div class="input-row">
+          <input id="claimInput" type="text" placeholder="写下你的主张，例如：自由比安全更重要" />
+          <button id="sendBtn">发送</button>
+          <button id="resetBtn" class="ghost">重置</button>
+        </div>
+        <p class="hint" id="socratesHint">
+          若站点已部署代理，会自动启用真 AI，无需任何配置；你也可在「⚙ API 设置」填自己的 Key 直连。
+          都没有时，苏格拉底走内容驱动的离线诘问：先读懂你这句话在"做什么"，再引用你的原话针对性追问，一轮一轮接着问，不替你下结论。
+        </p>
+      </div>
+      </div><!-- /elenchusPanel -->
+
+      <!-- 决策陪练：苏格拉底式四步决策框架 -->
+      <div id="decisionPanel">
+        <p class="decision-intro">
+          拿不准一个决定？把它写下来。苏格拉底式的「陪练」会唱反调、点出你没留意的盲区，再借「五年后的你」回看此刻——不过走到哪一步、最终选哪条路，都由你定。
+        </p>
+
+        <div class="decision-form">
+          <div class="df-row">
+            <label>我正在考虑的决定</label>
+            <textarea id="decTitle" rows="2" placeholder="例如：要不要从现在的公司离职去创业？"></textarea>
+          </div>
+          <div class="df-row">
+            <label>我目前的倾向</label>
+            <input id="decTendency" type="text" placeholder="例如：我偏向去创业" />
+          </div>
+          <div class="df-row">
+            <label>背景 · 目标 · 限制条件</label>
+            <textarea id="decContext" rows="3" placeholder="例如：28 岁，存款够半年，行业在下行，但有一个成型的产品想法和两位愿意合伙的朋友……"></textarea>
+          </div>
+        </div>
+
+        <div class="decision-examples">
+          <span class="de-label">不知道从哪聊起？点一个真实决策自动填入：</span>
+          <button class="chip" data-dtitle="要不要从现在的公司离职去创业？" data-dtend="我偏向去创业">要不要离职去创业？</button>
+          <button class="chip" data-dtitle="要不要接受外地城市的工作 offer？" data-dtend="我有点想去，但顾虑很多">要不要去外地工作？</button>
+          <button class="chip" data-dtitle="要不要考研？" data-dtend="我还在犹豫">要不要考研？</button>
+          <button class="chip" data-dtitle="要不要和现在的伴侣步入婚姻？" data-dtend="我有点不确定">要不要结婚？</button>
+        </div>
+
+        <div class="run-all">
+          <button id="runAllBtn" class="primary big">▶ 开始陪练：我按顺序陪你过一遍（推荐先点这个）</button>
+          <p class="flow-hint">会按顺序生成：① 唱反调 → ② 四个思维模型 → ③ 5 年后的自己 → ④ 事实核查。先在上面填（或点示例）你的决定，再点这里。</p>
+        </div>
+
+        <details class="steps-detail" open>
+          <summary>想自己挑着用？展开单独运行某一步 ↓</summary>
+          <div class="decision-steps">
+            <div class="step-card">
+              <div class="step-no">1</div>
+              <div class="step-body">
+                <h4>让 AI 唱反调</h4>
+                <p>三阶段：全力反驳 → 切换支持 → 中立裁判，先堵住「和稀泥」的顺从陷阱。</p>
+              </div>
+              <button class="ghost sm step-btn" data-step="devil">运行反方审查</button>
+            </div>
+            <div class="step-card">
+              <div class="step-no">2</div>
+              <div class="step-body">
+                <h4>四个思维模型</h4>
+                <p>用结构化框架拆解选项的代价。可一次跑完，也可单独挑。</p>
+                <div class="model-btns">
+                  <button class="ghost xs" data-model="matrix">选项矩阵</button>
+                  <button class="ghost xs" data-model="opp">机会成本</button>
+                  <button class="ghost xs" data-model="worst">最坏推演</button>
+                  <button class="ghost xs" data-model="sunk">沉没成本检测</button>
+                </div>
+              </div>
+              <button class="ghost sm step-btn" id="runModelsBtn">一次性跑四个</button>
+            </div>
+            <div class="step-card">
+              <div class="step-no">3</div>
+              <div class="step-body">
+                <h4>5 年后的自己</h4>
+                <p>让「穿越回来」的自己从长期视角给建议。</p>
+                <details class="profile-edit">
+                  <summary>个人档案（可选 · 写几句也行）</summary>
+                  <textarea id="decProfile" rows="5" placeholder="性格、核心价值观、重要经历、优缺点……越具体，长期视角越准。不填也能跑通用版。"></textarea>
+                </details>
+              </div>
+              <button class="ghost sm step-btn" data-step="future">穿越回来给建议</button>
+            </div>
+            <div class="step-card">
+              <div class="step-no">4</div>
+              <div class="step-body">
+                <h4>事实 vs 假设 · 低成本测试</h4>
+                <p>区分分析中混杂的事实与假设，设计可承受的现实测试。</p>
+              </div>
+              <button class="ghost sm step-btn" data-step="facts">生成核查清单</button>
+            </div>
+          </div>
+        </details>
+
+        <div class="decision-chat" id="decisionChat"></div>
+
+        <div class="decision-composer">
+          <input id="decFollowInput" type="text" placeholder="就上面的分析继续追问（在线 / 离线苏格拉底都会回应你）" />
+          <button id="decFollowBtn" class="primary sm">追问</button>
+          <button id="decResetBtn" class="ghost sm">清空</button>
+        </div>
+
+        <p class="decision-warning">
+          ⚠️ 记住：陪练只负责把正反面都摊开、帮你看清盲区；但核对事实、承担后果、做决定的，是你自己。
+          涉及具体数字、法律、医疗、钱的事，一定自己查——我为了把话说圆，可能会编出看起来很对的证据。
+        </p>
+      </div>
+
+    </section>
+
+    <!-- 正义沙盘 / 无知之幕 -->
+    <section id="view-veil" class="view">
+      <div class="module-head">
+        <h2>正义沙盘 · 原初状态模拟器</h2>
+        <p>
+          如果让你在完全不知道自己会投胎成谁的前提下，去设计一个社会，你会怎么分这块蛋糕？
+          这正是一位叫罗尔斯的哲学家提出来的「无知之幕」：你站在一道幕布后面，
+          对将来的阶级、天赋、健康全一无所知，你还怎么定规则？我们把它变成了一个能亲手玩的社会模拟：
+          你定下 6 条规则，一个由 1000 个虚拟市民组成的社会会真真实实运转 10 代，
+          而你，会被随机分配成其中一员——在还不知道自己会是谁的时候，看看你定的规矩，
+          会不会也让你自己过得体面。
+        </p>
+      </div>
+
+      <div id="veilStage" class="veil-stage">
+        <!-- 阶段一：设计制度 -->
+        <div class="veil-step" id="veilDesign">
+          <h3>① 在无知之幕后，定下你的社会规则</h3>
+          <p class="hint">记住：此刻你还<strong>不知道自己将会成为谁</strong>。下面 6 个滑块就是你要定下的"社会规则"——它们会真实地改变一个社会的运行方式，也决定你被随机分配后过得好不好。</p>
+          <div class="design-grid">
+            <div class="sliders" id="sliderHost"></div>
+            <div class="design-side">
+              <div class="preset-block">
+                <div class="preset-title">懒得调？一键预设（可再微调）</div>
+                <div class="preset-row">
+                  <button class="preset-btn" data-preset="rawls">罗尔斯式</button>
+                  <button class="preset-btn" data-preset="market">自由市场</button>
+                  <button class="preset-btn" data-preset="welfare">普惠福利</button>
+                </div>
+              </div>
+              <button id="runSimBtn" class="primary wide">▶ 开始模拟（你将以随机身份，亲历 10 代命运）</button>
+              <label class="mc-toggle"><input type="checkbox" id="mcToggle" /> 蒙特卡洛模式：跑 24 次取平均，把运气摊平（更严谨）</label>
+              <button id="archiveBtn" class="ghost wide">📂 我的社会档案（收藏 / 对比）</button>
+              <details class="tech-detail">
+                <summary>技术细节（好奇可点开 · 不影响游玩）</summary>
+                <div class="model-note">
+                  纯前端 Agent-Based 模拟，无外部依赖；种子随机数（Mulberry32）保证同样规则得到同样社会、便于对照。
+                  每名市民有天赋、继承财富、健康三项属性；每代按你的规则产生税前收入、纳税与转移支付
+                  （预算平衡：净收入 = 税前 + E·(均值−税前)），财富按 3%/代 复利；子女继承财富与能力，
+                  而<strong>教育会降低这种代际传递</strong>，从而提升流动性。
+                  指标：基尼系数（不平等）、洛伦兹曲线、代际收入弹性 IGE（出身决定命运的程度）、
+                  底层 20% 收入占比（罗尔斯式"最不利者"检验）。
+                  勾选<strong>蒙特卡洛模式</strong>时，同一套规则会跑 24 颗不同种子再取平均、并给出波动区间，
+                  把"你恰好投胎成谁"的运气摊平，结论更稳；揭幕后还会用本地扰动的小规模蒙特卡洛，
+                  算出<strong>哪条政策杠杆最影响公平</strong>——一次游玩，变成可解释的分析。
+                </div>
+              </details>
+            </div>
+          </div>
+        </div>
+
+        <!-- 阶段二：模拟运行 -->
+        <div class="veil-step hidden" id="veilSim">
+          <h3>② 模拟运行中…（第 <span id="genNow">0</span> / 10 代）</h3>
+
+          <div class="fate-panel">
+            <div class="fate-head">🧭 你被随机分配的那一户，正经历第 <span id="fateGen">0</span> 代</div>
+            <canvas id="fateCanvas" width="560" height="130"></canvas>
+            <div class="fate-row">
+              <span class="fate-rank">你在人群里的位置：<strong id="fateRank">–</strong></span>
+            </div>
+            <div class="fate-caption" id="fateCaption">幕布后，你还只是一个未出生的灵魂……</div>
+          </div>
+
+          <div class="sim-grid">
+            <div class="chart-card">
+              <div class="chart-title">收入分布（人越多越高 = 这一档人越多）</div>
+              <canvas id="distCanvas" width="560" height="300"></canvas>
+            </div>
+            <div class="chart-card">
+              <div class="chart-title">不平等程度演变 <span id="giniBadge" class="badge"></span></div>
+              <canvas id="giniCanvas" width="560" height="300"></canvas>
+            </div>
+            <div class="chart-card wide">
+              <div class="chart-title">贫富差距曲线（最终一代）</div>
+              <canvas id="lorenzCanvas" width="560" height="300"></canvas>
+            </div>
+            <div class="metrics">
+              <div class="metric"><span class="m-label">不平等程度</span><span class="m-sub">0=人人一样 · 1=全归一人</span><span class="m-val" id="mGini">–</span></div>
+              <div class="metric"><span class="m-label">出身决定命运</span><span class="m-sub">越低越靠本事</span><span class="m-val" id="mMobile">–</span></div>
+              <div class="metric"><span class="m-label">最穷 1/5 分到多少</span><span class="m-sub">全社会收入占比</span><span class="m-val" id="mBottom">–</span></div>
+              <div class="metric"><span class="m-label">人均产出</span><span class="m-sub">社会总蛋糕大小</span><span class="m-val" id="mAvg">–</span></div>
+              <div class="metric"><span class="m-label">对比上次</span><span class="m-sub">你调过的上一版</span><span class="m-val" id="mDelta">–</span></div>
+            </div>
+          </div>
+
+          <div class="shock-card hidden" id="shockCard">
+            <div class="shock-title">⚡ 第 5 代：一场突如其来的技术革命，一部分岗位永远消失了。</div>
+            <p class="shock-text">国库还有一笔储备。作为站在幕后的设计者，你要如何回应？<strong>你的选择会决定后半程这个社会的走向，也决定你（随机身份）的后半生。</strong></p>
+            <div class="shock-opts">
+              <button class="shock-opt" data-shock="market">
+                <span class="so-title">让市场自己调整</span>
+                <span class="so-sub">不干预 · 产出受挫但最自由</span>
+              </button>
+              <button class="shock-opt" data-shock="rescue">
+                <span class="so-title">动用储备托底</span>
+                <span class="so-sub">救济底层 · 但消耗家底</span>
+              </button>
+              <button class="shock-opt" data-shock="redistribute">
+                <span class="so-title">加税再分配</span>
+                <span class="so-sub">更平等 · 但挫伤动力</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="sim-actions">
+            <button id="stopSimBtn" class="ghost">⏸ 暂停</button>
+            <button id="toRevealBtn" class="primary" disabled>揭幕：看看你成了谁 ▸</button>
+          </div>
+        </div>
+
+        <!-- 阶段三：揭幕 -->
+        <div class="veil-step hidden" id="veilReveal">
+          <h3>③ 幕布拉开</h3>
+          <div id="identityCard" class="identity-card"></div>
+          <div id="scoreCard" class="score-card"></div>
+          <div id="reflectBox" class="reflect"></div>
+          <div id="philoCard" class="philo-card"></div>
+          <div id="sensCard" class="sens-card"></div>
+          <div class="redesign">
+            <h4>重新设计：如果当初能改一条规则……</h4>
+            <p class="hint">你刚才看到的是"用你定的规则"会活成的自己。现在可以拖动任意滑块，看看<strong>同样一个你</strong>（运气、天赋、出身全都不变），只因为规则变了，会落到哪里。</p>
+            <div class="redesign-sliders" id="redesignHost"></div>
+            <button id="redesignBtn" class="primary">看看改完后的我 ▸</button>
+            <div id="redesignOut" class="redesign-out"></div>
+          </div>
+          <div class="reflect-input">
+            <label>想对"幕布后的自己"说一句？（可选，会写进你的社会名片）</label>
+            <input id="reflectInput" type="text" placeholder="例如：下次设计规则时，记得为最惨的那个我多留一点余地" />
+          </div>
+          <div class="share-wrap">
+            <button id="saveSocietyBtn" class="ghost">⭐ 收藏这个社会</button>
+            <button id="shareBtn" class="primary">📋 生成我的社会名片</button>
+            <div id="shareCard" class="share-card hidden">
+              <pre id="shareText"></pre>
+              <button id="copyShareBtn" class="ghost sm">复制到剪贴板</button>
+            </div>
+          </div>
+          <div class="compare-wrap">
+            <button id="compareBtn" class="ghost">查看所有虚拟市民的结局 ▾</button>
+            <div id="compareBox" class="compare-box hidden"></div>
+          </div>
+          <div class="veil-actions">
+            <button id="replayBtn" class="primary">↺ 重新设计制度</button>
+            <button id="veilHomeBtn" class="ghost">回到首页</button>
+          </div>
+          <p class="cross-link">还想把「自己的想法」也逼问清楚？ <a href="#" data-go="socrates" data-mode="decision">去试试决策陪练 →</a></p>
+        </div>
+      </div>
+
+      <!-- 我的社会档案：收藏与对比 -->
+      <div id="archivePanel" class="archive-panel hidden">
+        <div class="archive-inner">
+          <div class="archive-head">
+            <h3>📂 我的社会档案</h3>
+            <button id="archiveClose" class="ghost sm">关闭</button>
+          </div>
+          <p class="hint">收藏过的社会会存在这台设备上。勾选两个，就能在雷达图上并排比较它们的制度取向与结果。</p>
+          <div id="archiveList" class="archive-list"></div>
+          <div class="radar-wrap">
+            <div class="radar-cap" id="radarCap">勾选两个社会即可对比（最多 2 个）</div>
+            <canvas id="radarCanvas" width="320" height="260"></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>思辨实验室 · 把哲学变成能用的思考工具</span>
+    <span>两件真正用得上的思考工具，不用先懂哲学</span>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
